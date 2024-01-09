@@ -1,0 +1,184 @@
+.navbar_wrapper{
+display: inline-flex;
+height: 1482px;
+width: 224px;
+flex-direction: column;
+align-items: flex-start;
+flex-shrink: 0;
+}
+.navbar_payments{
+    display: flex;
+    width: 224px;
+    padding: 16px 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    background: var(--Secondary-Navbar, #1E2640);
+}
+.nav_top{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+flex: 1 0 0;
+margin: 16px 10px 16px 10px;
+}
+.company_icon_image{
+    display: flex;
+width: 192px;
+align-items: center;
+gap: 12px;
+}
+.company_image_frame{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+background: var(--Black-100, #FFF);
+overflow: hidden;
+position: relative;
+.company_image{
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    left: 0.5px;
+    top: 0.5px;
+    border-radius: 4px;
+    background: url(https://s3-alpha-sig.figma.com/img/18ef/52d9/1494ed3109e53ab9db09579cd5d8839e?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hbXTfDpbx17Dm1UyWrCahHzqo902mog-y7REyL1EVX~ssIEzwHiEcj6MiIHeiOkbDRFcMpt3V-MvddqZyRBHDd-J3LkmTahxCv-UGtnU09Z3J2BfloJvJ7n8-My8RcF0WYqZ6UDqdBSium9I8xL4YyFvx4xreX-agyTnc8DLipLOn6ZANnuZqbZvpSsvyo6nPQr02YzgWu2BYAX~IzuUpJyPWDgjMwbgfHvQm7gpqsVVRXVoDqHJITXGmx4iYGsyfrawR5P-RLJ4ZNnwLYic-E7LCK2GbM-tOGgZf5OIKoUZwQMm35-HaH8YZ-MFzxSXKu~EwjGP9buXyfGZwoPdMg__), lightgray 50% / contain no-repeat;
+    background-size: cover;
+}
+
+}
+
+.company_name_and_visit_store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+
+    cursor: pointer;
+
+}
+.company_name{
+    align-self: stretch;
+    color: var(--Black-100, #FFF);
+
+/* Body 1/Medium */
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 146.667% */
+}
+.visit_store{
+    align-self: stretch;
+    color: var(--Black-100, #FFF);
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 123.077% */
+text-decoration-line: underline;
+opacity: 0.8;
+}
+.chevron_down_icon{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+cursor: pointer;
+}
+.pages{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+flex: 1 0 0;
+}
+.home,.orders,.products,.delivery,.marketing,.analytics,.payments,.tools,.discounts,.audience,.appearances,.plugins{
+    display: flex;
+width: 208px;
+padding: 8px 16px;
+align-items: flex-start;
+gap: 12px;
+border-radius: 4px;
+cursor: pointer;
+}
+.home_logo,.orders_logo,.products_logo,.delivery_logo,.marketing_logo,.analytics_logo,.payments_logo,.tools_logo,.discounts_logo,.audience_logo,.appearances_logo,.plugins_logo{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+opacity: 0.8;
+
+}
+.home_text,.orders_text,.orders_text,.products_text,.delivery_text,.marketing_text,.analytics_text,.payments_text,.tools_text,.discounts_text,.audience_text,.appearances_text,.plugins_text{
+    color: var(--Black-100, #FFF);
+
+/* Body 2/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+opacity: 0.8;
+}
+.nav_bottom{
+    display: flex;
+width: 192px;
+padding: 6px 12px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+background: #353C53;
+}
+.nav_bottom_frame{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.wallet_icon_frame{
+    display: flex;
+padding: 6px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+background: rgba(255, 255, 255, 0.10);
+}
+.wallet_icon{
+    width: 24px;
+    height: 24px;
+}
+.bottom_text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+}
+.available_credits{
+    color: var(--Black-100, #FFF);
+
+    /* Sub Body/Regular */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 123.077% */
+    opacity: 0.8;
+}
+.available_credits_number{
+    color: var(--Black-100, #FFF);
+
+    /* Sub Title/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+.currentPage{
+    border-radius: 4px;
+background: rgba(255, 255, 255, 0.10);
+}

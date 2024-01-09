@@ -1,0 +1,112 @@
+.header_wrapper{
+    display: flex;
+width: 1216px;
+padding: 12px 32px;
+align-items: center;
+gap: 16px;
+border-bottom: 1px solid #D9D9D9;
+background: #FFF;
+}
+.header_left{
+    display: flex;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+}
+
+
+.payments{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.payments_text{
+    color: #1A181E;
+
+/* Body 1/Regular */
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
+}
+.how_to_use{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.help_logo{
+    width: 14px;
+    height: 14px;
+}
+.how_to_use_text{
+    color: #4D4D4D;
+
+    /* Caption/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+}
+.header_middle{
+    display: flex;
+    width: 400px;
+    padding: 9px 16px;
+    align-items: center;
+    gap: var(--Spacing-spacing-04, 8px);
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 6px;
+background: #F2F2F2;
+}
+.icon_search{
+    width: 16px;
+height: 16px;
+flex-shrink: 0;
+}
+.header_middle_text{
+    color: #808080;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
+}
+.header_right{
+    display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+gap: var(--Spacing-spacing-04, 8px);
+flex: 1 0 0;
+}
+.header_right_component{
+    display: flex;
+align-items: flex-start;
+gap: 12px;
+}
+.chat_icon{
+    width: 40px;
+    height: 40px;
+position: relative;
+display: flex;
+justify-content: center;align-items: center;
+cursor: pointer;
+}
+.icon1{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #E6E6E6;
+position: absolute;
+}
+.icon2{
+   
+position: absolute;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.dropdown_icon{
+    cursor: pointer;
+}

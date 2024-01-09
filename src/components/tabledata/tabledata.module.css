@@ -1,0 +1,42 @@
+
+.table_data{
+    display: flex;
+width: 1128px;
+height: 48px;
+padding: 14px 12px;
+align-items: center;
+gap: 40px;
+background: var(--Black-100, #FFF);
+}
+.table_data_orderid,.table_data_orderdate,.table_data_orderamount,.table_data_transactionfees{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: -1px;
+flex: 1 0 0;
+background: var(--Black-100, #FFF);
+}
+.table_data_orderamount,.table_data_transactionfees{
+    align-items: flex-end;
+}
+.table_data_orderid_text{
+    color: var(--Primary-Blue, #146EB4);
+
+    /* Body 2/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+.table_data_orderdate_text,.table_data_orderamount_text,.table_data_transactionfees_text{
+    color: var(--Black-12, #1A181E);
+
+    /* Body 2/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
