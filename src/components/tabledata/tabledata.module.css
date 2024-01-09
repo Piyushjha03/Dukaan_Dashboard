@@ -7,7 +7,26 @@ padding: 14px 12px;
 align-items: center;
 gap: 40px;
 background: var(--Black-100, #FFF);
+position: relative;
+
 }
+
+ .divider{
+    display: flex;
+width: 1104px;
+height: 0px;
+justify-content: center;
+align-items: center;
+position: absolute;
+left: 12px;
+bottom: 0px;
+ } 
+ .line{
+    width: 1104px;
+height: 1px;
+background: #E6E6E6;
+ }
+
 .table_data_orderid,.table_data_orderdate,.table_data_orderamount,.table_data_transactionfees{
     display: flex;
 flex-direction: column;

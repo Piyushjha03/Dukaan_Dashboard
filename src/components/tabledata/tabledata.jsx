@@ -26,6 +26,11 @@ export const Tabledata = (props) => {
                     {props.transactionfees}
                 </div>
             </div>
+            <div className={styles.divider}>
+            <div className={styles.line}>
+                    
+                    </div>
+                </div>
         </div>
       
     </>
