@@ -127,7 +127,6 @@ background: var(--Black-95, #F2F2F2);
     display: flex;
 flex-direction: column;
 justify-content: flex-start;
-align-items: flex-start;
 gap: -1px;
 flex: 1 0 0;
 display: flex;
@@ -136,7 +135,9 @@ display: flex;
 align-items: center;
 gap: 4px;
 }
-
+.table_orderamount,.table_transactionfees{
+    justify-content: flex-end;
+}
 .table_orderid_name,.table_orderdate_name,.table_orderamount_name,.table_transactionfees_name{
     color: var(--Black-30, #4D4D4D);
 
