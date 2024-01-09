@@ -26,10 +26,8 @@ export const Transaction = () => {
                                 </defs>
                                 </svg>
                                 </div>
-                                <div className={styles.search_text}>
-                                            Search by Order ID...
-                                </div>
-                                        
+                                <input type='text' placeholder='Search by Order ID...' className={styles.search_text} />
+       
                                  </div>
                         </div>
                         <div className={styles.table_filter}>

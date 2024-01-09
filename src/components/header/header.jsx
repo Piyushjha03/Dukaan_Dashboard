@@ -1,6 +1,7 @@
 import styles from './header.module.css'
 
 export function Header() {
+ 
   return (
     <>
     <div className={styles.header_wrapper}>
@@ -41,9 +42,10 @@ export function Header() {
   </defs>
 </svg>
             </div>
-            <div className={styles.header_middle_text}>
-            Search features, tutorials, etc.
-        </div>
+            
+          <input type='text' placeholder='Search features, tutorials, etc.' className={styles.header_middle_text}/>
+            
+
         </div>
         <div className={styles.header_right}>
             <div className={styles.header_right_component}>
