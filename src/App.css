@@ -1,9 +1,6 @@
 .payments_cashfree_dashboard{
   background: var(--Black-98, #FAFAFA);
-  width: 1440px;
+  width: fit-content;
   height: 1482px;
   display: flex;
-}
-.main{
-
 }

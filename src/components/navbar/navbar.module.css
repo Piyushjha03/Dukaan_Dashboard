@@ -1,7 +1,7 @@
 .navbar_wrapper{
 display: inline-flex;
 height: 1482px;
-width: 224px;
+/* width: 224px; */
 flex-direction: column;
 align-items: flex-start;
 flex-shrink: 0;
@@ -181,4 +181,31 @@ gap: 2px;
 .currentPage{
     border-radius: 4px;
 background: rgba(255, 255, 255, 0.10);
+}
+
+@media (max-width: 1250px) {
+    .navbar_payments{
+        width: auto;
+    }
+    .company_icon_image{
+        width: auto;
+    }
+    .nav_top{
+        width: auto;
+    }
+    .home,.orders,.products,.delivery,.marketing,.analytics,.payments,.tools,.discounts,.audience,.appearances,.plugins{
+        width: auto;
+    }
+    .company_icon_image{
+        flex-direction: column;
+    }
+    .bottom_text,.home_text,.orders_text,.orders_text,.products_text,.delivery_text,.marketing_text,.analytics_text,.payments_text,.tools_text,.discounts_text,.audience_text,.appearances_text,.plugins_text{
+        display: none;
+    }
+    .nav_bottom{
+        width: auto;
+    }
+    .visit_store{
+        text-wrap: nowrap;
+    }
 }
