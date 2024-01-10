@@ -104,7 +104,7 @@ export const Transaction = () => {
                     </div>
                 </div>
                 {/* table data=-------------------------- */}
-        <Tabledata  orderid='#281209' orderdate='7 July,2023' orderamount='₹1278.23' transactionfees='₹22' />
+         <Tabledata  orderid='#281209' orderdate='7 July,2023' orderamount='₹1278.23' transactionfees='₹22' />
         <Tabledata  orderid='#281209' orderdate='7 July,2023' orderamount='₹1278.23' transactionfees='₹22' />
         <Tabledata  orderid='#281209' orderdate='7 July,2023' orderamount='₹1278.23' transactionfees='₹22' />
         <Tabledata  orderid='#281209' orderdate='7 July,2023' orderamount='₹1278.23' transactionfees='₹22' />

@@ -1,6 +1,6 @@
 .header_wrapper{
     display: flex;
-width: 1216px;
+width: auto;
 padding: 12px 32px;
 align-items: center;
 gap: 16px;
@@ -122,4 +122,10 @@ position: absolute;
 }
 .dropdown_icon{
     cursor: pointer;
+}
+
+@media (max-width:1050px) {
+    .header_left{
+        display: none;
+    }
 }
