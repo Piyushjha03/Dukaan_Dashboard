@@ -1,15 +1,20 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import styles from "./navbar.module.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export function Navbar() {
   const nav=useNavigate()
   const  [currentPage, setcurrentPage] = useState('payment')
+  const location=useLocation()
 
   function handleClick(e){
     setcurrentPage(e)
   }
+
+  useEffect(()=>{
+setcurrentPage(location.pathname.slice(1))
+  },[location])
 
 
   return (
