@@ -1,8 +1,17 @@
 import { useNavigate } from "react-router-dom"
 import styles from "./navbar.module.css"
+import { useState } from "react"
+
 
 export function Navbar() {
   const nav=useNavigate()
+  const  [currentPage, setcurrentPage] = useState('payment')
+
+  function handleClick(e){
+    setcurrentPage(e)
+  }
+
+
   return (
    <>
    <div className={styles.navbar_wrapper}>
@@ -24,7 +33,9 @@ export function Navbar() {
             </div>
 
             <div className={styles.pages}>
-                <div className={styles.home} onClick={()=>{nav('/home')}}>
+                <div className={`${styles.home} ${currentPage==='home' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('home')
+                  nav('/home')}}>
                     <div className={styles.home_logo}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <g opacity="0.8">
@@ -34,7 +45,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.home_text}>Home</div>
                 </div>
-                <div className={styles.orders} onClick={()=>{nav('/orders')}}>
+                <div className={`${styles.orders} ${currentPage==='orders' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('orders')
+                  nav('/orders')}}>
                     <div className={styles.orders_logo}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <g opacity="0.8">
@@ -48,7 +61,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.orders_text}>Orders</div>
                 </div>
-                <div className={styles.products} onClick={()=>{nav('/products')}}>
+                <div className={`${styles.products} ${currentPage==='products' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('products')
+                  nav('/products')}}>
                     <div className={styles.products_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -58,7 +73,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.products_text}>Products</div>
                 </div>
-                <div className={styles.delivery} onClick={()=>{nav('/delivery')}}>
+                <div className={`${styles.delivery} ${currentPage==='delivery' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('delivery')
+                  nav('/delivery')}}>
                     <div className={styles.delivery_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -71,7 +88,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.delivery_text}>Delivery</div>
                 </div>
-                <div className={styles.marketing} onClick={()=>{nav('/marketing')}}>
+                <div className={`${styles.marketing} ${currentPage==='marketing' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('marketing')
+                  nav('/marketing')}}>
                     <div className={styles.marketing_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -84,7 +103,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.marketing_text}>Marketing</div>
                 </div>
-                <div className={styles.analytics} onClick={()=>{nav('/analytics')}}>
+                <div className={`${styles.analytics} ${currentPage==='analytics' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('analytics')
+                  nav('/analytics')}}>
                     <div className={styles.analytics_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -97,7 +118,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.analytics_text}>Analytics</div>
                 </div>
-                <div className={`${styles.payments} ${styles.currentPage}`} onClick={()=>{nav('/payments')}}>
+                <div className={`${styles.payments} ${currentPage==='payments' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('payments')
+                  nav('/payments')}}>
                     <div className={styles.payments_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <path fillRule="evenodd" clipRule="evenodd" d="M3.75 13.75H1.47727C0.661397 13.75 0 13.1904 0 12.5V3.75C0 3.05964 0.661397 2.5 1.47727 2.5H14.7727C15.5886 2.5 16.25 3.05964 16.25 3.75L16.25 6.25H18.5227C19.3386 6.25 20 6.8796 20 7.65625V16.0938C20 16.8704 19.3386 17.5 18.5227 17.5H5.22727C4.4114 17.5 3.75 16.8704 3.75 16.0938V13.75ZM5 6C4.17157 6 3.5 6.67157 3.5 7.5V12.25H1.5V4H14.75L14.75 6H5ZM11.875 14.375C13.2557 14.375 14.375 13.2557 14.375 11.875C14.375 10.4943 13.2557 9.375 11.875 9.375C10.4943 9.375 9.375 10.4943 9.375 11.875C9.375 13.2557 10.4943 14.375 11.875 14.375Z" fill="white"/>
@@ -105,7 +128,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.payments_text}>Payments</div>
                 </div>
-                <div className={styles.tools} onClick={()=>{nav('/tools')}}>
+                <div className={`${styles.tools} ${currentPage==='tools' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('tools')
+                  nav('/tools')}}>
                     <div className={styles.tools_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -115,7 +140,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.tools_text}>Tools</div>
                 </div>
-                <div className={styles.discounts} onClick={()=>{nav('/discounts')}}>
+                <div className={`${styles.discounts} ${currentPage==='discounts' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('discounts')
+                  nav('/discounts')}}>
                     <div className={styles.discounts_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8" clipPath="url(#clip0_475_1200)">
@@ -133,7 +160,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.discounts_text}>Discounts</div>
                 </div>
-                <div className={styles.audience} onClick={()=>{nav('/audience')}}>
+                <div className={`${styles.audience} ${currentPage==='audience' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('audience')
+                  nav('/audience')}}>
                     <div className={styles.audience_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
@@ -146,7 +175,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.audience_text}>Audience</div>
                 </div>
-                <div className={styles.appearances} onClick={()=>{nav('/appearances')}}>
+                <div className={`${styles.appearances} ${currentPage==='appearances' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('appearances')
+                  nav('/appearances')}}>
                     <div className={styles.appearances_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8" clipPath="url(#clip0_475_1210)">
@@ -165,7 +196,9 @@ export function Navbar() {
                     </div>
                     <div className={styles.appearances_text}>Appearances</div>
                 </div>
-                <div className={styles.plugins} onClick={()=>{nav('/plugins')}}>
+                <div className={`${styles.plugins} ${currentPage==='plugins' ? `${styles.currentPage}` : 'none'}`}  onClick={()=>{
+                  handleClick('plugins')
+                  nav('/plugins')}}>
                     <div className={styles.plugins_logo}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g opacity="0.8">
